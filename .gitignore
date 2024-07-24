@@ -10,3 +10,6 @@ DATA
 
 #DOssier chroma
 chroma
+
+#model
+models/mistral-7b-instruct-v0.1.Q5_K_M.gguf
