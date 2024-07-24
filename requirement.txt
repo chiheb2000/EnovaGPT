@@ -1,0 +1,13 @@
+
+streamlit
+langchain
+transformers
+PyPDF2
+python-dotenv
+sentence_transformers
+chromadb
+streamlit_option_menu
+langchain-community
+langchain-huggingface
+selenium
+beautifulsoup4
