@@ -2,16 +2,29 @@ from langchain.prompts import PromptTemplate
 
 
 
-def generate_recruitment_post(llm, poste, type_contrat, salaire=None, duree_stage=None):
-    competences_template = PromptTemplate(input_variables=["poste"], template="Liste de compétences requises pour un {poste} ayant de l'expérience.")
-    avantages_template = PromptTemplate(input_variables=["type_contrat", "poste"], template="Avantages offerts pour un {type_contrat} comme {poste}.")
 
+def generate_recruitment_post(llm, poste, type_contrat, salaire=None, duree_stage=None):
+    # Description de la tâche pour générer la liste de compétences
+    competences_template = PromptTemplate(
+        input_variables=["poste"],
+        template="Votre tâche est de lister les compétences nécessaires pour un {poste} ayant de l'expérience. \n\nListe de compétences requises :"
+    )
+    # Description de la tâche pour générer la liste des avantages
+    avantages_template = PromptTemplate(
+        input_variables=["type_contrat", "poste"],
+        template="Votre tâche est de lister les avantages offerts pour un {type_contrat} comme {poste}. \n\nAvantages offerts :"
+    )
+
+    # Crée les chaînes de génération des compétences et avantages
     competences_chain = competences_template | llm
     avantages_chain = avantages_template | llm
 
+
+    # Invoque les chaînes pour obtenir les compétences et avantages
     competences = competences_chain.invoke({"poste": poste})
     avantages = avantages_chain.invoke({"type_contrat": type_contrat, "poste": poste})
-
+    
+    # Génère le message selon le type de contrat
     if type_contrat == "Internship":
         prompt = (
             f"🚀 Enova Robotics offers an exciting internship opportunity!\n\n"
@@ -35,3 +48,4 @@ def generate_recruitment_post(llm, poste, type_contrat, salaire=None, duree_stag
             f"Don't miss this opportunity to be part of our innovative and dynamic family! 🌟"
         )
     return prompt
+
