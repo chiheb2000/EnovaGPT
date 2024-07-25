@@ -15,9 +15,9 @@ Ce projet vise à développer un modèle de langage large (LLM) capable de gén�
 
 Installez les dépendances à partir du fichier requirement.txt 
 
-    ```bash
+ 
     pip install -r requirement.txt
-    ```
+   
 
 ## Modèle Utilisé
 
