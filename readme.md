@@ -6,10 +6,12 @@ Ce projet vise à développer un modèle de langage large (LLM) capable de gén�
 
 ## Fonctionnalités
 
-- Génération de postes de recrutement en utilisant le modèle Mistral-7B-Instruct v0.1 GGUF
-- Analyse de CVs pour extraire des informations pertinentes
+- Génération de postes de recrutement en utilisant le modèle Mistral-7B-Instruct v0.1 GGUF et intégration de techniques de Prompt Engineering
+
+![Prompt Engineering](https://github.com/user-attachments/assets/076d58e7-52eb-4cc1-8cb2-4435d69b41fd)
+
+- Analyse de CVs pour extraire des informations pertinentes en intégration de techniques de Retrieval-Augmented Generation (RAG)
 - Recherche de profils LinkedIn compatibles avec les postes via scraping
-- Intégration de techniques de Prompt Engineering et de Retrieval-Augmented Generation (RAG)
 
 ## Installation
 
