@@ -1,4 +1,4 @@
-#  Installer toutes les bibliothèques listées dans le fichier requirement.txt
+#  Installer toutes les bibliothèques listées dans le fichier requirement.txt 
 
 ## Modèle Utilisé
 
