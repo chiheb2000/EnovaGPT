@@ -4,9 +4,9 @@ from typing import List
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema import Document
-from embedding_function import get_embedding_function
+from fonction.embedding_function import get_embedding_function
 from langchain_community.vectorstores import Chroma
-CHROMA_PATH = "chroma"
+CHROMA_PATH = "c:/Users/chatt/Desktop/Nouveau dossier/Stage enova/chroma"
 DATA_PATH = "C:/Users/chatt/Desktop/Nouveau dossier/Stage enova/Data"
 
 def main(reset=False):

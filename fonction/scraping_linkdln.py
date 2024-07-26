@@ -14,7 +14,7 @@ def get_chrome_driver(headless=False):
     options.add_argument("--disable-gpu")  # Disable GPU usage
     options.add_argument("--no-sandbox")  # Bypass OS security model
     options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
-    chromedriver_path = "chromedriver.exe"
+    chromedriver_path = "C:/Users/chatt/Desktop/Nouveau dossier/Stage enova/Version Final/chromedriver.exe"
     driver = webdriver.Chrome(service=ChromeService(chromedriver_path), options=options)
     return driver
 
