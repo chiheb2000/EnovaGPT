@@ -8,21 +8,31 @@ from streamlit_option_menu import option_menu
 from generation_post import generate_recruitment_post
 from analyse_cv import query_profiles, upload_and_save_pdf
 from scraping_linkdln import login_and_save_cookies, load_cookies_and_get_driver, get_linkedin_profiles
+from dotenv import load_dotenv
+import os
+# Charger les variables d'environnement depuis le fichier .env
+load_dotenv()
 
-MODEL_PATH = "C:/Users/chatt/Desktop/Nouveau dossier/Stage enova/models/mistral-7b-instruct-v0.1.Q5_K_M.gguf"
+# Obtenir les valeurs des variables d'environnement
+MODEL_PATH = os.getenv('MODEL_PATH')
+DATA_PATH = os.getenv('DATA_PATH')
+HUGGINGFACEHUB_API_TOKEN = os.getenv('HUGGINGFACEHUB_API_TOKEN')
+DATABASE_PATH = os.getenv('DATABASE_PATH')
 
+# Function to initialize the LlamaCpp model
 @st.cache_resource
 def initialize_llm():
     return LlamaCpp(
-        streaming=False,  
+        streaming=False,
         model_path=MODEL_PATH,
-        temperature=0.75,  
-        top_p=0.9,  
-        verbose=True,  
-        n_ctx=4096 , 
+        temperature=0.75,
+        top_p=0.9,
+        verbose=True,
+        n_ctx=4096,
     )
 
-HUGGINGFACEHUB_API_TOKEN="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"
+# Function to initialize the HuggingFaceHub model
+@st.cache_resource
 def initialize_llmsmall():
     repo_id="facebook/opt-125m"
     llm = HuggingFaceHub(
