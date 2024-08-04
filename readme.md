@@ -1,3 +1,6 @@
+## Note
+Le code est complet dans la branche `test`.
+
 # Développement d'un Large Language Model (LLM)
 ![LLM](https://github.com/user-attachments/assets/b675ad40-9ccc-4b87-8630-4e2f337cea75)
 
@@ -22,6 +25,11 @@ Ce projet vise à développer un modèle de langage large (LLM) capable de gén�
 > ***Interface :*** 
 ![image (5)](https://github.com/user-attachments/assets/0694b872-4cd9-4226-98ca-772a7a4fc21a)
 ![image (6)](https://github.com/user-attachments/assets/5a85a318-1296-4e2b-a6cd-13979679acd2)
+
+## Video Démo
+
+https://github.com/user-attachments/assets/c81b2c3e-bc6d-4815-bbb0-65e1ccf37ffd
+
 ## Installation
 
 Installez les dépendances à partir du fichier requirement.txt 
