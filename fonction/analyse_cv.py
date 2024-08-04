@@ -35,7 +35,7 @@ Extracted Details:
 def query_profiles(post_description: str, embedding_function, llm):
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
     # Rechercher les chunks similaires
-    results = db.similarity_search_with_score(post_description, k=10)
+    results = db.similarity_search_with_score(post_description)
 
     # Grouper les chunks par CV
     grouped_results = {}

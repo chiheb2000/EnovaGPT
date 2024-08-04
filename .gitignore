@@ -8,7 +8,11 @@ chromedriver.exe
 #DOssier data
 DATA
 
-
+#DOssier BaseDonné
+DATABase
 
 #model
 models/mistral-7b-instruct-v0.1.Q5_K_M.gguf
+
+
+.env
