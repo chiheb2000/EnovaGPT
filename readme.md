@@ -44,7 +44,7 @@ Ce projet vise à développer un modèle de langage large (LLM) capable de gén�
 
 <div align="center">
   <video width="600" controls>
-    <source src="https://github.com/user-attachments/assets/c81b2c3e-bc6d-4815-bbb0-65e1ccf37ffd" type="video/mp4">
+    <source src="https://github.com/user-attachments/assets/c81b2c3e-bc6d-4815-bbb0-65e1ccf37ffd">
     Your browser does not support the video tag.
   </video>
 </div>
