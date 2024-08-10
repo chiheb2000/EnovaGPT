@@ -42,7 +42,7 @@ Ce projet vise à développer un modèle de langage large (LLM) capable de gén�
 
 ## 🎥 Video Démo
 
-[![Watch the Video](https://github.com/user-attachments/assets/c81b2c3e-bc6d-4815-bbb0-65e1ccf37ffd)]
+https://github.com/user-attachments/assets/c81b2c3e-bc6d-4815-bbb0-65e1ccf37ffd
 
 
 ## 🛠️ Installation
